@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Larsseit";    
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Larsseit"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/roboto.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/roboto.woff") format("woff");
+  }
+
+a {
+    text-decoration: none;
+}
+.main {
+    margin: 0 auto;
+    position: relative;
+    width: 1440px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*-----NAVIGATION-----*/
+
+nav {
+    position: absolute;
+    margin-top: 27px;
+    padding-left: 180px;
+    height: 50px;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1130px;
+    height: 50px;
+}
+.logo {
+    font-family: "Larsseit";
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+
+    color: #62d0df;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 233px;
+}
+.nav-link {
+    font-family: "Larsseit";
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #22356f;
+}
+.button-contact {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #62d0df;
+    border-radius: 50px;
+    font-family: "Larsseit";
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #ffffff;
+}
+
+/*-----HEAD-----*/
+.head {
+
+    
+    padding-left: 180px;
+}
+.head-bg {
+    margin-bottom: -164px;
+    position: relative;
+    width: 1117px;
+    height: 840px;
+    left: 0px;
+    top: 0px;
+    background: #f4f9e2;
+    z-index: -3;
+}
+.head-img {
+    position: absolute;
+    left: 697.98px;
+    top: 0;
+    z-index: -1;
+}
+
+.rectangle {
+    position: absolute;
+    width: 807.71px;
+    height: 544.93px;
+    left: 839.93px;
+    top: -170.66px;
+    background: #edfdff;
+    border-radius: 312.159px;
+    transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+    z-index: -2;
+}
+.head-content {
+    position:relative;
+    top: 240px;
+}
+.head-content h1 {
+    margin-top: 38px;
+    font-family: "Larsseit";
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.035em;
+
+    color: #22356f;
+}
+.head-content p {
+    margin-top: 76px;
+    font-family: "Larsseit";
+    font-size: 24px;
+    line-height: 42px;
+
+    color: #22356f;
+}
+
+.buttons {
+    margin-top: 63px;
+    display: flex;
+    align-items: center;
+}
+.button-orange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background: #f9b640;
+
+    font-family: "Larsseit";
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+
+    color: #ffffff;
+}
+.button-transparent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 43px;
+
+    font-family: "Larsseit";
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+
+    color: #fab63e;
+}
+
+/*-----WHY THRiVE-----*/
+
+.why-thrive {
+    position: relative;
+    height: 607px;
+    padding-left: 180px;
+    background: #62d0df;
+}
+.thrive-bg {
+}
+.thrive-img {
+    position: absolute;
+    right: 0;
+    width: 525px;
+    height: 604px;
+}
+.thrive-content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-top: 150px;
+    height: 361px;
+}
+
+.thrive-content h2 {
+    margin-top: 150px;
+    font-family: "Larsseit";
+    font-size: 36px;
+    line-height: 27px;
+    letter-spacing: -0.006em;
+
+    color: #ffffff;
+}
+.thrive-content p {
+    margin-top: 75px;
+
+    font-family: "Larsseit";
+    font-size: 20px;
+    line-height: 29.3px;
+
+    color: #ffffff;
+}
+.thrive-content p span {
+    font-family: "Larsseit";
+    font-size: 24px;
+    line-height: 35px;
+
+    color: #ffffff;
+}
+
+/*-----ABOUT US-----*/
+
+.about-us {
+    margin-top: 156px;
+    margin-bottom: 120px;
+}
+.about-content {
+    margin-left: 106px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 910px;
+}
+.about-content span {
+    font-family: "Larsseit";
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+
+    color: #22356f;
+}
+.about-content p {
+    font-family: "Larsseit";
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.005em;
+
+    color: #22356f;
+}
+.can-help {
+    margin-top: 70px;
+    text-align: center;
+}
+.can-help h3 {
+    margin-bottom: 24px;
+    font-family: "Larsseit";
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: rgba(34, 53, 111, 0.5);
+}
+.can-help-cards {
+    display: flex;
+    justify-content: center;
+}
+.help-card {
+    display: flex;
+    justify-content: center;
+    width: 360px;
+    height: 360px;
+}
+.card-container {
+    margin: 71px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-content: space-between;
+}
+.line {
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+}
+.card-name {
+    display: flex;
+    margin-top: 30px;
+    text-align: start;
+}
+.point {
+    width: 12px;
+    height: 12px;
+    background: #e9b730;
+    border-radius: 100%;
+}
+.cards-h2 {
+    margin-left: 20px;
+    font-family: "Larsseit";
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.006em;
+
+    color: #ffffff;
+}
+
+/*-----HEALTH PROGRAMS-----*/
+.health-programs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.program-card {
+    display: flex;
+    justify-content: center;
+    min-width: 480px;
+    min-height: 480px;
+}
+.program-card-container {
+    margin-top: 96px;
+    min-width: 340px;
+    min-height: 71px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-content: space-between;
+}
+.cards-programs-name {
+    margin-top: 30px;
+}
+
+/*-----HEALTH-PLANS-----*/
+
+.health-plans {
+    margin-top: 22px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.plans-card {
+    width: 480px;
+    height: 240px;
+}
+.plans-card-content {
+    margin-top: 55px;
+    margin-left: 105px;
+}
+.plans-card h3 {
+    font-family: "Larsseit";
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+
+    color: #22356f;
+}
+.plans-card p {
+    font-family: "Larsseit";
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+
+    color: rgba(34, 53, 111, 0.5);
+}
+
+/*-----MDD-AFFECTS-----*/
+.mdd-affects {
+    display: flex;
+}
+.mdd-img {
+}
+.mdd-content {
+    margin: 103px auto 42px 106px;
+    display: flex;
+    flex-direction: column;
+}
+.mdd-text {
+    margin-top: 255px;
+    margin-bottom: 152px;
+    font-family: "Larsseit";
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+
+    color: #22356f;
+}
+
+.mdd-content p {
+    font-family: "Larsseit";
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+
+    color: #22356f;
+}
+
+/*-----READY-----*/
+
+.ready {
+    display: flex;
+    justify-content: space-between;
+    background: #22356f;
+    color: #ffffff;
+}
+.ready img {
+    display: inline-block;
+    right: 0;
+}
+.ready-content {
+    margin-top: 103px;
+    margin-left: 180px;
+    display: inline-block;
+}
+.ready-content h2 {
+    margin-top: 230px;
+    font-family: "Larsseit";
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+}
+.ready-content span {
+    font-family: "Larsseit";
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+}
+.ready-content p {
+    margin-top: 75px;
+    font-family: "Larsseit";
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+.ready-button {
+    margin-top: 65px;
+    font-family: "Larsseit";
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #62d0df;
+}
+
+/*-----BOTTOM-----*/
+.footer-content {   
+    display: flex;
+}
+.footer-info { margin-top: 98px;
+    margin-left: 68px;
+    display: flex;
+}
+.footer-info h3 {
+    font-family: "Larsseit";
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: -0.006em;
+
+    color: #22356f;
+}
+.footer-info,.phone,.email, p {
+    margin-top: 50px;
+    font-family: "Larsseit";
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.006em;
+
+    color: rgba(34, 53, 111, 0.5);
+}
+.some-info {
+    width: 240px;
+}
+.enfold {
+    width: 240px;
+}
+.office {
+    width: 240px;
+}
+.phone {
+    display: inline-block;
+    margin-top: 25px;
+}
+.email {
+    color: #006DFF;
+}
+.author {
+    padding-left: 180px;
+    display: flex;
+    align-items: center;
+    width: 1443px;
+height: 80px;
+background: #62D0DF;
+
+font-family: 'Larsseit';
+font-size: 14px;
+line-height: 11px;
+letter-spacing: -0.006em;
+
+color: #FFFFFF;
+}
